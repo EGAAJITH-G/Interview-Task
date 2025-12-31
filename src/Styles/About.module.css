@@ -1,0 +1,79 @@
+.container {
+  background: #ffc400;
+  padding: 50px;
+  text-align: center;
+}
+
+.heading {
+  font-size: 40px;
+  font-weight: bold;
+  margin-bottom: 30px;
+}
+
+.carousel {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+}
+
+.carouselWindow {
+  width: 900px;
+  overflow: hidden;
+}
+
+.cards {
+  display: flex;
+  transition: transform 0.5s ease-in-out;
+}
+
+.card {
+  flex: 0 0 25%;
+  background: #ffd54f;
+  margin: 0 10px;
+  padding: 20px;
+  border-radius: 16px;
+  transition: transform 0.3s;
+}
+
+.card:hover {
+  transform: scale(1.05);
+}
+
+.card img {
+  width: 100%;
+}
+
+.sizes span {
+  background: black;
+  color: white;
+  padding: 6px 10px;
+  border-radius: 6px;
+  margin: 5px;
+  font-size: 12px;
+}
+
+.arrow {
+  background: black;
+  color: white;
+  border: none;
+  width: 45px;
+  height: 45px;
+  font-size: 24px;
+  border-radius: 50%;
+  cursor: pointer;
+}
+
+.disabled {
+  opacity: 0.4;
+  pointer-events: none;
+}
+
+.allBtn {
+  margin-top: 30px;
+  padding: 14px 35px;
+  border-radius: 12px;
+  font-weight: bold;
+  border: none;
+  cursor: pointer;
+}
