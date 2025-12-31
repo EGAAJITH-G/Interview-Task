@@ -4,8 +4,16 @@ import styles from "../Styles/Home.module.css";
 import dottop from "../Images/homeimg/Group 12.png";
 import dotside from "../Images/homeimg/Group 11.png";
 import shoe from "../Images/homeimg/shoe.png";
+import shoe2 from "../Images/homeimg/shoe.png";
+import shoe3 from "../Images/homeimg/shoe.png";
+
 
 export default function Home() {
+  const shoes = [shoe, shoe2, shoe3];
+  const [currentIndex, setCurrentIndex] = React.useState(0);
+  const nextSlide = () => {
+    setCurrentIndex((prev) => (prev + 1) % shoes.length);
+  }
   return (
     <div className={styles.home_container}>
       <img src={dottop} alt="top dots" className={styles.dot_top} />
@@ -27,17 +35,27 @@ export default function Home() {
 
         <div className={styles.image_section}>
           <div className={styles.circle}></div>
-          <img src={shoe} alt="shoe" className={styles.shoe_img} />
+            <img
+            key={currentIndex}
+            src={shoes[currentIndex]}
+            alt="shoe"
+            className={styles.shoe_img}
+          />
         </div>
       </div>
 
-      <button className={styles.next_btn}>❯</button>
+      <button className={styles.next_btn} onClick={nextSlide}>❯</button>
 
       <div className={styles.slider_controls}>
         <div className={styles.pagination}>
-          <span className={styles.dot}></span>
-          <span className={styles.dot}></span>
-          <span className={styles.dot}></span>
+          {shoes.map((_, i) => (
+            <span
+              key={i}
+              className={`${styles.dot} ${
+                currentIndex === i ? styles.active : ""
+              }`}
+            ></span>
+          ))}
         </div>
       </div>
     </div>

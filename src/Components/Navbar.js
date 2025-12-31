@@ -9,10 +9,18 @@ export default function Navbar() {
         </div>
 
         <div className={styles.navlinks}>
-          <h3>Home</h3>
-          <h3>About</h3>
-          <h3>Product</h3>
-          <h3>Testimonials</h3>
+          <a href="/">
+            <h3>Home</h3>{" "}
+          </a>
+          <a href="/about">
+            <h3>About</h3>
+          </a>
+          <a href="/product">
+            <h3>Product</h3>
+          </a>
+          <a href="/testimonials">
+            <h3>Testimonials</h3>
+          </a>
         </div>
 
         <div>
