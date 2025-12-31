@@ -1,10 +1,11 @@
-import logo from './logo.svg';
-import './App.css';
+import Product from "./Components/Product";
+import HeroTestimonials from "./Components/Testmonential";
+
 
 function App() {
   return (
-    <div className="App">
-     <h1>Let's Begin Our Interview Task</h1>
+    <div>
+     <HeroTestimonials/>
     </div>
   );
 }
