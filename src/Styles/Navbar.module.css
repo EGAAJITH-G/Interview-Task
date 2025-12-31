@@ -1,0 +1,26 @@
+/* body{
+    background-color: black;
+} */
+ .navbar{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    background-color: #1e1e1e;
+    color: white;
+ }
+ .navlinks{
+    display: flex;
+    gap: 35px;
+    cursor: pointer;
+ }
+ .shopbtn{
+   background: #ffc400;
+  color: #000;
+  border: none;
+  padding: 14px 36px;
+  border-radius: 30px;
+  font-weight: bold;
+  cursor: pointer;
+  font-size: 14px;
+ }

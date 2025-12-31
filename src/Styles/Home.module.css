@@ -1,0 +1,246 @@
+/* .wrapper {
+  background-color: #1e1e1e;
+  min-height: 100vh;
+  position: relative;
+  overflow: hidden;
+}
+.dot {
+  position: absolute;
+  top: 30px;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 1;
+}
+.homecontainer {
+  min-height: 80vh;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 80px;
+  color: white;
+  position: relative;
+}
+.textsection {
+  max-width: 550px;
+  z-index: 2;
+}
+
+.vintage {
+  font-style: italic;
+  font-size: 48px;
+  display: inline-block;
+  transform: rotate(-10deg);
+  margin-left: 20px;
+}
+
+.title {
+  font-size: 110px;
+  font-weight: 900;
+  transform: rotate(-10deg);
+  margin-top: -20px;
+}
+
+.yellow {
+  color: #ffc400;
+}
+
+.sale {
+  font-size: 80px;
+  font-weight: 900;
+  transform: rotate(-10deg);
+  margin-top: -80px;
+}
+.line {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.subtitle {
+  display: flex;
+  justify-content: center;
+  color: #bdbdbd;
+  font-size: 14px;
+}
+
+.shopBtn {
+  background-color: #ffc400;
+  color: black;
+  border: none;
+  padding: 10px 26px;
+  border-radius: 20px;
+  font-size: 12px;
+  font-weight: 700;
+  cursor: pointer;
+}
+.imageSection {
+  position: relative;
+  z-index: 1;
+}
+
+.circle {
+  width: 480px;
+  height: 480px;
+  background-color: #ffc400;
+  border-radius: 50%;
+  position: absolute;
+  right: -80px;
+  top: 60px;
+}
+
+.shoeImg {
+  width: 700px;
+  height: auto;
+  position: relative;
+  z-index: 2;
+  transform: rotate(-8deg);
+} */
+
+.home_container {
+  background: #1e1e1e;
+  min-height: 100vh;
+  position: relative;
+  overflow: hidden;
+}
+.dot_top {
+  position: absolute;
+  top: 0px;
+  left: 50%;
+  transform: translateX(50%);
+}
+.dot_left {
+  position: absolute;
+  left: 30px;
+  top: 20%;
+  transform: translateY(50%);
+}
+.dot_right {
+  position: absolute;
+  right: 30px;
+  bottom: 80px;
+}
+.home_content {
+  /* display: flex;
+  justify-content: space-between;
+  align-items: center; */
+  padding: 50px 100px;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+}
+.text_section {
+  max-width: 600px;
+}
+.vintage {
+  font-family: cursive;
+  font-size: 49px;
+  font-style: italic;
+  color: #ffffff;
+  transform: rotate(-5deg);
+  margin-left: 80px;
+  margin-top: 100px;
+  margin-bottom: 18px;
+}
+
+.sneakers {
+  font-size: 130px;
+  font-weight: 900;
+  color: #ffc400;
+  transform: rotate(-5deg);
+  margin: -60px 0 0 0;
+}
+
+.sale {
+  font-size: 130px;
+  font-weight: 900;
+  color: #ffffff;
+  transform: rotate(-5deg);
+  margin-top: -80px;
+  margin-left: 360px;
+  margin-bottom: 10px;
+}
+
+.subtitle {
+  display: flex;
+  justify-content: center;
+  margin: 25px 0;
+  font-size: 16px;
+  color: #cccccc;
+}
+
+.btn_wrapper {
+  display: flex;
+  justify-content: center;
+}
+.btn {
+  background: #ffc400;
+  color: #000;
+  border: none;
+  padding: 14px 36px;
+  border-radius: 30px;
+  font-weight: bold;
+  cursor: pointer;
+}
+.image_section {
+  position: relative;
+}
+.circle {
+  position: absolute;
+  width: 540px;
+  height: 540px;
+  background: #ffc400;
+  /* border-radius: 650px 650px 550px 550px; */
+  border-radius: 50%;
+  transform: rotate(-40deg);
+  top: 5px;
+  right: 0px;
+  bottom: 0;
+}
+.shoe_img {
+  position: absolute;
+  top: -160px;
+  right: -30px;
+  width: 840px;
+  transform: rotate(-5deg);
+  filter: drop-shadow(0 25px 35px rgba(0, 0, 0, 0.4));
+}
+
+.next_btn {
+  position: absolute;
+  right: 100px;
+  width: 54px;
+  height: 54px;
+  border-radius: 50%;
+  border: none;
+  background: #8b8b8b;
+  color: #000;
+  font-size: 22px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.slider_controls {
+  position: absolute;
+  bottom: 25px;
+  left: 0;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.pagination {
+  display: flex;
+  gap: 12px;
+}
+.dot {
+  width: 18px;
+  height: 6px;
+  background: #6b6b6b;
+  border-radius: 10px;
+  opacity: 0.6;
+}
+.active {
+  width: 38px;
+  background: #ffffff;
+  opacity: 1;
+}
+
