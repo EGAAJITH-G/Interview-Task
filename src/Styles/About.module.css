@@ -1,79 +1,91 @@
 .container {
-  background: #ffc400;
-  padding: 50px;
+  background: #ffc107;
+  min-height: 100vh;
+  padding: 40px 60px;
   text-align: center;
+  font-family: "Poppins", sans-serif;
 }
-
 .heading {
-  font-size: 40px;
-  font-weight: bold;
-  margin-bottom: 30px;
+  font-size: 48px;
+  font-weight: 800;
+  margin-bottom: 50px;
 }
 
-.carousel {
+/* WRAPPER */
+.carouselWrapper {
   display: flex;
   align-items: center;
   justify-content: center;
-  gap: 20px;
+  gap: 30px;
 }
 
-.carouselWindow {
-  width: 900px;
-  overflow: hidden;
-}
-
-.cards {
+/* CAROUSEL ROW */
+.carousel {
   display: flex;
-  transition: transform 0.5s ease-in-out;
+  gap: 40px;
 }
 
+/* CARD */
 .card {
-  flex: 0 0 25%;
-  background: #ffd54f;
-  margin: 0 10px;
-  padding: 20px;
+  width: 180px;
+  background: rgba(255, 255, 255, 0.35);
   border-radius: 16px;
-  transition: transform 0.3s;
-}
-
-.card:hover {
-  transform: scale(1.05);
+  padding: 20px;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.15);
+  transition: all 0.35s ease;
 }
 
 .card img {
   width: 100%;
+  transform: rotate(-20deg);
+}
+
+/* CENTER CARD */
+.active {
+  background: #ffd54f;
+  transform: translateY(-20px) scale(1.05);
+}
+
+/* 🔥 hover ONLY on center */
+.active:hover {
+  transform: translateY(-35px) scale(1.1);
+}
+
+/* TEXT */
+.name {
+  margin-top: 20px;
+  font-weight: 600;
+}
+
+.sizes {
+  display: flex;
+  justify-content: center;
+  gap: 8px;
+  margin-top: 10px;
 }
 
 .sizes span {
-  background: black;
-  color: white;
-  padding: 6px 10px;
-  border-radius: 6px;
-  margin: 5px;
+  background: #111;
+  color: #fff;
   font-size: 12px;
+  padding: 4px 8px;
+  border-radius: 6px;
 }
 
+/* BUTTONS */
 .arrow {
-  background: black;
-  color: white;
+  background: none;
   border: none;
-  width: 45px;
-  height: 45px;
-  font-size: 24px;
-  border-radius: 50%;
+  font-size: 40px;
   cursor: pointer;
 }
 
-.disabled {
-  opacity: 0.4;
-  pointer-events: none;
-}
-
 .allBtn {
-  margin-top: 30px;
-  padding: 14px 35px;
+  margin-top: 40px;
+  padding: 12px 28px;
   border-radius: 12px;
-  font-weight: bold;
   border: none;
+  font-weight: 600;
+  background: #ffe082;
   cursor: pointer;
 }
