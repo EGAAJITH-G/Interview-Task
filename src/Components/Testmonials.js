@@ -1,10 +1,12 @@
 
 import React from "react";
-import styles from "../Styles/Testmonential.module.css";
+import styles from "../Styles/Testmonials.module.css";
 import img from '../images 2/shoes6.png';
 
 
+
 export default function HeroTestimonials() {
+  
   return (
     <div className={styles.page}>
       
@@ -18,7 +20,7 @@ export default function HeroTestimonials() {
             it's a passport to adventure. So, lace up your dreams and stride towards a world<br />
             of endless possibilities, one stylish step at a time.
           </p>
-          <button className={styles.button}>SHOP NOW</button>
+        <button className={styles.button}>SHOP NOW</button>
         </div>
 
         <img
@@ -58,12 +60,6 @@ export default function HeroTestimonials() {
           <div className={styles.user}>Emily Turner</div>
         </div>
       </section>
-
-      <div className={styles.dots}>
-        <span className={styles.dot}></span>
-        <span className={styles.dotActive}></span>
-        <span className={styles.dot}></span>
-      </div>
     </div>
   );
 }
