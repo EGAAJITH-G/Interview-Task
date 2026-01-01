@@ -12,13 +12,13 @@ export default function Navbar() {
           <a href="/">
             <h3>Home</h3>{" "}
           </a>
-          <a href="/about">
+          <a href="about">
             <h3>About</h3>
           </a>
-          <a href="/product">
+          <a href="product">
             <h3>Product</h3>
           </a>
-          <a href="/testimonials">
+          <a href="HeroTestimonials">
             <h3>Testimonials</h3>
           </a>
         </div>

@@ -13,7 +13,7 @@ export default function HeroTestimonials() {
 
       <section className={styles.hero}>
         <div className={styles.heroText}>
-          <h1 className={styles.title}>Good Shoes takes you<br />Good Places</h1>
+          <h1 className={styles.title}>Good Shoes takes you Good Places</h1>
           <p className={styles.desc}>
             Step into good shoes, and you'll embark on a journey to incredible destinations.<br />
             Your choice of footwear isn't just about comfort;<br />

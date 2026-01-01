@@ -47,10 +47,10 @@
 
 
 .heroImage {
-  width: 420px;
+  width: 600px;
   position: absolute;
-  right: 40px;
-  top: 40px;
+  right: 30px;
+  top: -100px;
   transform: rotate(18deg);
   filter: drop-shadow(20px 30px 20px rgba(0,0,0,0.35));
   pointer-events: none;
