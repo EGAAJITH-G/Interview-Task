@@ -1,0 +1,141 @@
+.page {
+  background: #FFC107;
+  min-height: 100vh;
+  padding: 40px 60px;
+  font-family: Arial, sans-serif;
+  padding-top: 100px;
+}
+
+.brand {
+  font-weight: bold;
+}
+
+.hero {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.heroText {
+  max-width: 520px;
+}
+
+.title {
+  font-size: 48px;
+  font-weight: 900;
+  margin-bottom: 20px;
+}
+
+.desc {
+  font-size: 14px;
+  line-height: 1.6;
+  margin-bottom: 30px;
+}
+.button {
+  background: #222;
+  color: #fff;
+  padding: 15px 40px;
+  border-radius: 12px;
+  border: none;
+  font-weight: bold;
+  transition: all 0.3s ease;
+}
+
+.button:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 12px 25px rgba(0,0,0,0.35);
+}
+
+
+.heroImage {
+  width: 600px;
+  position: absolute;
+  right: 30px;
+  top: -100px;
+  transform: rotate(18deg);
+  filter: drop-shadow(20px 30px 20px rgba(0,0,0,0.35));
+  pointer-events: none;
+  animation: floatShoe 3s ease-in-out infinite;
+}
+@keyframes floatShoe {
+  0% {
+    transform: rotate(18deg) translateY(0);
+  }
+  50% {
+    transform: rotate(18deg) translateY(-18px);
+  }
+  100% {
+    transform: rotate(18deg) translateY(0);
+  }
+}
+
+.heroText {
+  animation: fadeUp 1s ease forwards;
+}
+
+@keyframes fadeUp {
+  from {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+
+.hero {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: relative;
+}
+
+
+.testTitle {
+  text-align: center;
+  font-size: 36px;
+  font-weight: 900;
+  margin: 60px 0 40px;
+}
+
+.cards {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 30px;
+}
+.card {
+  background: #FFD54F;
+  padding: 30px;
+  border-radius: 18px;
+  transition: all 0.3s ease;
+}
+
+.card:hover {
+  transform: translateY(-6px);
+}
+
+.dark {
+  background: #222;
+  color: #fff;
+}
+
+.quote {
+  font-size: 40px;
+  font-weight: bold;
+}
+
+.cardText {
+  font-size: 14px;
+  line-height: 1.5;
+  margin: 20px 0;
+}
+
+.user {
+  font-weight: bold;
+}
+
+
+
+
