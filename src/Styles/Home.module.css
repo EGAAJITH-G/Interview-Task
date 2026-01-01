@@ -1,6 +1,6 @@
 .home_container {
   background: #1e1e1e;
-  min-height: 100vh;
+  /* min-height: 100vh; */
   position: relative;
   overflow: hidden;
 }
@@ -28,7 +28,7 @@
 }
 .text_section {
   max-width: 600px;
-  animation: contentFade 2s ease backwards;
+  animation: contentFade 2s ease backwards ;
 }
 @keyframes contentFade {
   from {
@@ -87,16 +87,20 @@
   border: none;
   padding: 14px 36px;
   border-radius: 30px;
-  font-weight: bold;
+  font-weight: 700;
   cursor: pointer;
+}
+.btn:hover {
+  background: #ffffff;
+  transform: translateY(-6px);
 }
 .image_section {
   position: relative;
 }
 .circle {
   position: absolute;
-  width: 440px;
-  height: 440px;
+  width: 490px;
+  height: 490px;
   background: #ffc400;
   border-radius: 50%;
   transform: rotate(-40deg);
@@ -115,7 +119,6 @@
     opacity: 1;
   }
 }
-
 .shoe_img {
   position: absolute;
   top: -160px;
@@ -123,7 +126,7 @@
   width: 840px;
   transform: rotate(-5deg);
   filter: drop-shadow(0 25px 35px rgba(0, 0, 0, 0.4));
-  animation: shoeSlide 0.7s ease-in-out;
+  animation: shoeSlide 0.7s ease-in-out,shoeFloat 3s ease-in-out 0.7s infinite; ;
 }
 @keyframes shoeSlide {
   0% {
@@ -135,9 +138,18 @@
     transform: translateX(0) rotate(-5deg);
   }
 }
+@keyframes shoeFloat {
+  0%, 100% {
+    transform: translateY(0) rotate(-5deg);
+  }
+  50% {
+    transform: translateY(-15px) rotate(-5deg);
+  }
+}
 .next_btn {
   position: absolute;
-  right: 100px;
+  top: 580px;
+  right: 0px;
   width: 54px;
   height: 54px;
   border-radius: 50%;
@@ -179,4 +191,29 @@
   opacity: 1;
 }
 
-
+@media (min-width: 1441px) and (max-width: 1950px) {
+  .home_content {
+    padding: 70px 120px;
+  }
+  .vintage {
+    font-size: 55px;
+    margin-left: 80px;
+    margin-top: 100px;
+  }
+  .sneakers,
+  .sale {
+    font-size: 130px;
+  }
+  .circle {
+    width: 550px;
+    height: 550px;
+  }
+  .shoe_img {
+    width: 900px;
+    top: -180px;
+    right: -30px;
+  }
+  .next_btn {
+    right: 100px;
+  }
+}

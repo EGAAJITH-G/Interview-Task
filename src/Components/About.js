@@ -24,8 +24,6 @@ export default function ProductCarousel() {
 
   return (
     <div className={styles.container}>
-      
-
       <h1 className={styles.heading}>Find your Perfect Wear</h1>
 
       <div className={styles.carouselWrapper}>
