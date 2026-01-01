@@ -1,13 +1,19 @@
-import About from "./Components/About";
+import Home from "./Components/Home";
+import Navbar from "./Components/Navbar";
 import Product from "./Components/Product";
 import HeroTestimonials from "./Components/Testmonential";
+import About from "./Components/About";
+
 function App() {
   return (
-    <div>
+    <>
+      <Navbar />
+      <Home />
       <About />
-      <Product/>
+      <Product />
       <HeroTestimonials />
-    </div>
+      
+    </>
   );
 }
 
