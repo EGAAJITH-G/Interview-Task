@@ -7,13 +7,12 @@ import shoe from "../Images/homeimg/shoe.png";
 import shoe2 from "../Images/homeimg/shoe.png";
 import shoe3 from "../Images/homeimg/shoe.png";
 
-
 export default function Home() {
   const shoes = [shoe, shoe2, shoe3];
   const [currentIndex, setCurrentIndex] = React.useState(0);
   const nextSlide = () => {
     setCurrentIndex((prev) => (prev + 1) % shoes.length);
-  }
+  };
   return (
     <div className={styles.home_container}>
       <img src={dottop} alt="top dots" className={styles.dot_top} />
@@ -35,7 +34,7 @@ export default function Home() {
 
         <div className={styles.image_section}>
           <div className={styles.circle}></div>
-            <img
+          <img
             key={currentIndex}
             src={shoes[currentIndex]}
             alt="shoe"
@@ -44,7 +43,9 @@ export default function Home() {
         </div>
       </div>
 
-      <button className={styles.next_btn} onClick={nextSlide}>❯</button>
+      <button className={styles.next_btn} onClick={nextSlide}>
+        ❯
+      </button>
 
       <div className={styles.slider_controls}>
         <div className={styles.pagination}>
